@@ -11,27 +11,200 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Ambient & Progress Elements -->
   <div class="progress"></div>
   <div class="cursor-glow"></div>
   <div class="orb o1"></div>
   <div class="orb o2"></div>
-  <div id="root"></div>
 
-  <!-- Libraries: React, htm (JSX-style templates, no build step), anime.js, Lenis smooth scroll -->
-  <script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.js"></script>
+  <!-- Navbar -->
+  <header class="nav">
+    <a href="#home" class="logo">SV<i>.</i></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="scene-wrap">
+      <div class="scene">
+        <div class="orbit" style="inset: 0%; transform: rotateX(62deg);"><div class="ring"></div></div>
+        <div class="orbit" style="inset: 12%; transform: rotateX(80deg);"><div class="ring"></div></div>
+        <div class="orbit" style="inset: 24%; transform: rotateX(98deg);"><div class="ring"></div></div>
+        <div class="core"></div>
+      </div>
+    </div>
+    <div class="hero-inner">
+      <div class="carousel">
+        <div class="hero-text">
+          <p class="tag"></p>
+          <h1></h1>
+          <p class="sub"></p>
+        </div>
+      </div>
+      <div class="dots"></div>
+      <div class="cta">
+        <a href="#projects" class="btn">View my work</a>
+        <a href="#contact" class="btn ghost">Contact me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="reveal">
+      <h2 class="title">About me</h2>
+    </div>
+    <div class="reveal">
+      <p class="lead">
+        I'm a Computer Science student who enjoys turning ideas into working software, from problem solving in Python, Java and C++ to building smooth, animated interfaces for the web.
+      </p>
+    </div>
+    <div class="reveal">
+      <dl class="facts">
+        <div>
+          <dt>Name</dt>
+          <dd>Sarthak Verma</dd>
+        </div>
+        <div>
+          <dt>Age</dt>
+          <dd>19</dd>
+        </div>
+        <div>
+          <dt>College</dt>
+          <dd>LNCT Main Campus</dd>
+        </div>
+        <div>
+          <dt>Field</dt>
+          <dd>Computer Science</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="track">
+    <div class="stage">
+      <div class="head">
+        <h2 class="title">Skills</h2>
+        <p class="lead">Scroll to rotate the ring.</p>
+      </div>
+      <div class="tilt3d">
+        <div class="ring3d">
+          <div class="tile" style="transform: rotateY(0deg) translateZ(var(--r));">
+            <span class="ico">Py</span>
+            <h3>Python</h3>
+            <p>Programming language</p>
+          </div>
+          <div class="tile" style="transform: rotateY(45deg) translateZ(var(--r));">
+            <span class="ico">Ht</span>
+            <h3>HTML</h3>
+            <p>Page structure</p>
+          </div>
+          <div class="tile" style="transform: rotateY(90deg) translateZ(var(--r));">
+            <span class="ico">Cs</span>
+            <h3>CSS</h3>
+            <p>Styling and animation</p>
+          </div>
+          <div class="tile" style="transform: rotateY(135deg) translateZ(var(--r));">
+            <span class="ico">Js</span>
+            <h3>JavaScript</h3>
+            <p>Programming language</p>
+          </div>
+          <div class="tile" style="transform: rotateY(180deg) translateZ(var(--r));">
+            <span class="ico">Jv</span>
+            <h3>Java</h3>
+            <p>Programming language</p>
+          </div>
+          <div class="tile" style="transform: rotateY(225deg) translateZ(var(--r));">
+            <span class="ico">C+</span>
+            <h3>C++</h3>
+            <p>Programming language</p>
+          </div>
+          <div class="tile" style="transform: rotateY(270deg) translateZ(var(--r));">
+            <span class="ico">Gt</span>
+            <h3>Git</h3>
+            <p>Version control</p>
+          </div>
+          <div class="tile" style="transform: rotateY(315deg) translateZ(var(--r));">
+            <span class="ico">Gh</span>
+            <h3>GitHub</h3>
+            <p>Code hosting and collaboration</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="reveal">
+      <h2 class="title">Projects</h2>
+    </div>
+    <div class="reveal">
+      <p class="lead">Replace these placeholders with your own work.</p>
+    </div>
+    <div class="grid">
+      <div class="reveal">
+        <article class="card">
+          <h3>Project one</h3>
+          <p>Write what you built and the problem it solves.</p>
+          <div class="tags">
+            <span>Tech 1</span>
+            <span>Tech 2</span>
+          </div>
+        </article>
+      </div>
+      <div class="reveal">
+        <article class="card">
+          <h3>Project two</h3>
+          <p>Write what you built and the problem it solves.</p>
+          <div class="tags">
+            <span>Tech 1</span>
+            <span>Tech 2</span>
+          </div>
+        </article>
+      </div>
+      <div class="reveal">
+        <article class="card">
+          <h3>Project three</h3>
+          <p>Write what you built and the problem it solves.</p>
+          <div class="tags">
+            <span>Tech 1</span>
+            <span>Tech 2</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="reveal">
+      <h2 class="title">Let's build something</h2>
+    </div>
+    <div class="reveal">
+      <p class="lead">See my code and what I'm working on.</p>
+    </div>
+    <div class="reveal">
+      <a href="https://github.com/" target="_blank" rel="noopener" class="btn">Open my GitHub</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Sarthak Verma
+  </footer>
+
+  <!-- External Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 
-  <!-- Your code (order matters) -->
-  <script src="js/utils.js"></script>
-  <script src="js/components/Nav.js"></script>
-  <script src="js/components/Hero.js"></script>
-  <script src="js/components/About.js"></script>
-  <script src="js/components/Skills.js"></script>
-  <script src="js/components/Projects.js"></script>
-  <script src="js/components/Contact.js"></script>
+  <!-- Main JavaScript File -->
   <script src="script.js"></script>
 </body>
 </html>
